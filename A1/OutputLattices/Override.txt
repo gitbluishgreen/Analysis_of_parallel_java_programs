@@ -1,0 +1,12 @@
+Heap:
+Reference B@1
+	Fields are -> f, f
+Reference C@1
+	Fields are -> f, f, f
+Reference A@1
+	Fields are -> f
+Stack:
+Function Override::main()
+	b -> { B@1 }
+	a -> { B@1, C@1, A@1 }
+Yes

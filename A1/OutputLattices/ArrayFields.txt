@@ -1,0 +1,23 @@
+Heap:
+Reference A@1
+	Fields are -> f
+		f -> { int[]@2 }
+Reference int[]@2
+	Fields are -> 
+Reference int[]@1
+	Fields are -> 
+Stack:
+Function FieldSensitivity1::main()
+	x -> { int[]@2, int[]@1 }
+	y -> { int[]@2 }
+	a -> { A@1 }
+Function A::setF()
+	x -> { int[]@2, int[]@1 }
+	this -> { A@1 }
+Function A::getF()
+	this -> { A@1 }
+Function A::id()
+	this -> { }
+	x -> { }
+Yes
+Yes

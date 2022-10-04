@@ -1,0 +1,51 @@
+Heap:
+Reference B@1
+	Fields are -> f1, f0
+		f1 -> { B@1 }
+		f0 -> { C@1 }
+Reference C@1
+	Fields are -> f2, f1, f0
+		f0 -> { C@1 }
+		f2 -> { A@1 }
+		f1 -> { B@1 }
+Reference A@1
+	Fields are -> f0
+		f0 -> { C@1, C@3, C@2 }
+Reference C@3
+	Fields are -> f2, f1, f0
+		f0 -> { }
+		f1 -> { B@2, B@3 }
+		f2 -> { }
+Reference A@2
+	Fields are -> f0
+		f0 -> { C@1, C@3, C@2 }
+Reference B@2
+	Fields are -> f1, f0
+		f1 -> { }
+		f0 -> { }
+Reference B@3
+	Fields are -> f1, f0
+		f1 -> { }
+		f0 -> { }
+Reference C@2
+	Fields are -> f2, f1, f0
+		f0 -> { }
+		f1 -> { B@2, B@3 }
+		f2 -> { }
+Stack:
+Function Main::main()
+	a1 -> { A@1 }
+	q1 -> { C@1, C@3, C@2 }
+	b1 -> { B@1 }
+	a2 -> { A@1, A@2 }
+	q3 -> { }
+	c2 -> { C@3, C@2 }
+	b2 -> { B@2, B@3 }
+	c1 -> { C@1 }
+	q2 -> { C@1 }
+	q4 -> { }
+Yes
+Yes
+No
+Yes
+No

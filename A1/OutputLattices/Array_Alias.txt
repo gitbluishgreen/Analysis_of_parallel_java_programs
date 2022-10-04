@@ -1,0 +1,19 @@
+Heap:
+Reference int[]@1
+	Fields are -> 
+Reference B@1
+	Fields are -> a, b
+		a -> { }
+		b -> { int[]@1 }
+Reference A@1
+	Fields are -> a, b
+		b -> { int[]@1 }
+		a -> { int[]@1 }
+Stack:
+Function Array_Alias::main()
+	l1 -> { int[]@1 }
+	b -> { B@1, A@1 }
+	a -> { A@1 }
+	l2 -> { int[]@1 }
+Yes
+Yes

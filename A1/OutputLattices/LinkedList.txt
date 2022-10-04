@@ -1,0 +1,51 @@
+Heap:
+Reference Element@1
+	Fields are -> val
+Reference Element@2
+	Fields are -> val
+Reference List@1
+	Fields are -> elem, next, end
+		elem -> { Element@1, Element@2, Element@3 }
+		next -> { List@2 }
+Reference List@2
+	Fields are -> elem, next, end
+		elem -> { Element@1, Element@2, Element@3 }
+		next -> { List@2 }
+Reference Element@3
+	Fields are -> val
+Stack:
+Function LinkedList::main()
+	head -> { List@1 }
+	t2 -> { List@2 }
+	l3 -> { List@2 }
+	l1 -> { List@2 }
+	el03 -> { Element@3 }
+	el01 -> { Element@1 }
+	l2 -> { List@2 }
+	t3 -> { List@2 }
+	t1 -> { List@2 }
+	el02 -> { Element@2 }
+Function Element::init()
+	this -> { Element@1, Element@2, Element@3 }
+Function Element::getVal()
+	this -> { }
+Function Element::equal()
+	other -> { }
+	this -> { }
+	e -> { }
+Function List::init()
+	e1 -> { Element@1, Element@2, Element@3 }
+	this -> { List@1, List@2 }
+Function List::push_back()
+	tmp -> { List@2 }
+	this -> { List@1 }
+	e -> { Element@2, Element@3 }
+	aux -> { List@2 }
+	ptr -> { List@1, List@2 }
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes

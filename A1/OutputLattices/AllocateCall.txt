@@ -1,0 +1,23 @@
+Heap:
+Reference A@2
+	Fields are -> 
+Reference A@4
+	Fields are -> 
+Reference A@3
+	Fields are -> 
+Reference A@1
+	Fields are -> 
+Stack:
+Function AllocateCall::main()
+	y -> { A@2 }
+	t -> { A@3, A@1 }
+	x -> { A@1 }
+Function A::swap()
+	arg2 -> { A@2, A@3, A@1 }
+	temp -> { A@2, A@3, A@1 }
+	arg1 -> { A@2, A@3, A@1 }
+	this -> { A@4 }
+No
+No
+Yes
+Yes

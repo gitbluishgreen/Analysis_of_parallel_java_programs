@@ -1,0 +1,22 @@
+Heap:
+Reference s@2
+	Fields are -> 
+Reference s@1
+	Fields are -> 
+Reference t@1
+	Fields are -> 
+Stack:
+Function MultiAllocate::main()
+	a -> { s@2, s@1, t@1 }
+	b -> { s@2, s@1 }
+Function t::n()
+	c1 -> { t@1 }
+	b1 -> { s@1 }
+	this -> { t@1 }
+Function s::n()
+	c2 -> { s@2, s@1 }
+	this -> { s@2, s@1 }
+	b2 -> { s@2 }
+Yes
+No
+Yes

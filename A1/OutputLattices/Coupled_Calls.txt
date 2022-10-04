@@ -1,0 +1,20 @@
+Heap:
+Reference A@1
+	Fields are -> f, t, t1
+		f -> { A@1, A@2 }
+Reference A@2
+	Fields are -> f, t, t1
+		f -> { A@1, A@2 }
+Stack:
+Function Coupled_Calls::main()
+	a -> { A@1 }
+Function A::foo()
+	obj -> { A@1, A@2 }
+	obj1 -> { A@1, A@2 }
+	this -> { A@1, A@2 }
+Function A::bar()
+	temp_obj -> { A@1, A@2 }
+	this -> { A@1, A@2 }
+Yes
+Yes
+Yes

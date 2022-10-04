@@ -1,0 +1,52 @@
+Heap:
+Reference Operand@2
+	Fields are -> val, lt, rt
+		lt -> { }
+		rt -> { }
+Reference AddOperator@1
+	Fields are -> lt, rt
+		lt -> { Operand@2, Operand@1 }
+		rt -> { Operand@1, AddOperator@2 }
+Reference Operand@1
+	Fields are -> val, lt, rt
+		lt -> { }
+		rt -> { }
+Reference AddOperator@2
+	Fields are -> lt, rt
+		lt -> { Operand@2, Operand@1 }
+		rt -> { Operand@1, AddOperator@2 }
+Stack:
+Function Tree::main()
+	a1 -> { AddOperator@1 }
+	c1 -> { Operand@1 }
+	t3 -> { Operand@1, AddOperator@2 }
+	t1 -> { Operand@2, Operand@1 }
+	a2 -> { AddOperator@2 }
+	c2 -> { Operand@2 }
+	t2 -> { Operand@2, Operand@1 }
+Function Node::addLeftNode()
+	t -> { AddOperator@1, AddOperator@2 }
+	this -> { AddOperator@1, AddOperator@2 }
+	lt -> { Operand@2, Operand@1 }
+Function Node::addRightNode()
+	this -> { AddOperator@1, AddOperator@2 }
+	rt -> { Operand@1, AddOperator@2 }
+	t -> { AddOperator@1, AddOperator@2 }
+Function Node::getVal()
+	this -> { }
+Function Node::setVal()
+	this -> { }
+Function AddOperator::getVal()
+	this -> { AddOperator@1, AddOperator@2 }
+Function Operand::setVal()
+	t -> { Operand@2, Operand@1 }
+	this -> { Operand@2, Operand@1 }
+Function Operand::getVal()
+	this -> { Operand@2, Operand@1 }
+No
+Yes
+No
+Yes
+Yes
+No
+Yes

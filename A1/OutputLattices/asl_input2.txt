@@ -1,0 +1,20 @@
+Heap:
+Reference B@1
+	Fields are -> f0
+		f0 -> { A@1 }
+Reference A@1
+	Fields are -> f0
+		f0 -> { B@1 }
+Stack:
+Function Main::main()
+	a -> { A@1 }
+	b -> { B@1 }
+	e -> { A@1 }
+	d -> { B@1 }
+	f -> { B@1 }
+	c -> { A@1 }
+No
+Yes
+No
+Yes
+Yes

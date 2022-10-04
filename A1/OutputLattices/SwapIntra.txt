@@ -1,0 +1,18 @@
+Heap:
+Reference A@1
+	Fields are -> 
+Reference A@4
+	Fields are -> 
+Reference A@3
+	Fields are -> 
+Reference A@2
+	Fields are -> 
+Stack:
+Function SwapIntra::main()
+	x -> { A@1, A@4, A@2 }
+	t -> { A@1, A@4, A@2 }
+	z -> { A@3 }
+	y -> { A@1, A@4, A@2 }
+Yes
+No
+No

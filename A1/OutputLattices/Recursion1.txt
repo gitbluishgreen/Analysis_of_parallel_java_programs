@@ -1,0 +1,24 @@
+Heap:
+Reference N@1
+	Fields are -> value, next
+		next -> { }
+Stack:
+Function Recursion1::main()
+	p -> { }
+	q -> { }
+	o -> { }
+	n -> { N@1 }
+	node -> { N@1 }
+Function N::set_val()
+	this -> { N@1 }
+Function N::recursive()
+	m -> { N@1 }
+	v -> { N@1 }
+	this -> { N@1 }
+	w -> { }
+No
+No
+No
+Yes
+No
+Yes
